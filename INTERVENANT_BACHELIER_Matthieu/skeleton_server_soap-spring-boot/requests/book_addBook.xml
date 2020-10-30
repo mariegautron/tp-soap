@@ -1,0 +1,13 @@
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:ynov="http://nantes.ynov.com/soap/book">
+	<soapenv:Header />
+	<soapenv:Body>
+		<ynov:addBookRequest>
+			<ynov:title>livre ajouté avec Postman</ynov:title>
+			<ynov:isbn>6548-9852</ynov:isbn>
+			<ynov:year>2019</ynov:year>
+			<ynov:authorId>1</ynov:authorId>
+		</ynov:addBookRequest>
+	</soapenv:Body>
+</soapenv:Envelope>

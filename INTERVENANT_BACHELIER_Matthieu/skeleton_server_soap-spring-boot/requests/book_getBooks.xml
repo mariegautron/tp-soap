@@ -1,0 +1,8 @@
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:ynov="http://nantes.ynov.com/soap/book">
+	<soapenv:Header />
+	<soapenv:Body>
+		<ynov:getBooksRequest />
+	</soapenv:Body>
+</soapenv:Envelope>

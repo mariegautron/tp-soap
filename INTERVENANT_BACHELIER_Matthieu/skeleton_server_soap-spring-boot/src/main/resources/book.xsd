@@ -1,0 +1,39 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://nantes.ynov.com/soap/book"
+	targetNamespace="http://nantes.ynov.com/soap/book"
+	elementFormDefault="qualified">
+
+	<!-- Entité exposée -->
+	<xs:complexType name="book">
+		<xs:sequence>
+			<!-- Ici ses attributs -->
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- Récupérer un livre par son titre -->
+	<xs:element name="getBookByTitleRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<!-- Ici les arguments pour appeler la méthode : 1, 2 arguements ? Au 
+					choix -->
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="getBookResponse">
+		<!-- A compléter : quel type d'objet doit-on retourner ici -->
+	</xs:element>
+
+	<!-- Récupérer l'ensemble des livres -->
+	<!-- Request / Response -->
+
+	<!-- Ajouter un livre -->
+	<!-- Request / Response -->
+
+	<!-- Supprimer un livre -->
+	<!-- Request / Response -->
+	
+	<!-- Etc. pour les autres méthodes. -->
+
+
+</xs:schema>

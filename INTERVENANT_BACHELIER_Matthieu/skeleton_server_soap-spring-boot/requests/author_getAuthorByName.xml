@@ -1,0 +1,11 @@
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:ynov="http://nantes.ynov.com/soap/author">
+	<soapenv:Header />
+	<soapenv:Body>
+		<ynov:getAuthorRequest>
+			<ynov:lastname>LAST</ynov:lastname>
+			<ynov:firstname>first</ynov:firstname>
+		</ynov:getAuthorRequest>
+	</soapenv:Body>
+</soapenv:Envelope>
