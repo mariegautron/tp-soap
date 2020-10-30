@@ -35,4 +35,4 @@ Si c'est un projet utilisant une autre technologie, merci d'être plus explicite
 
 ## Serveur / Client ?
 
-Dans votre code, si vous avez également codé un client SOAP, différenciez bien les projets en les mettants chacun dans un sous-dossier.
+Dans votre code, si vous avez également codé un client SOAP, différenciez bien les projets en les mettant chacun dans un sous-dossier.
