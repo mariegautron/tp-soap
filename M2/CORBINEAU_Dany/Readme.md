@@ -11,11 +11,11 @@
 
 ## Lancer le projet pré-compilé 
 
-1. Via une console, dans le dossier out/artifacts/WebServiceTP1_Server_jar
-2. Exécuter la commande `java -jar WebServiceTP1.jar`
-3. Via une console, dans le dossier out/artifacts/WebServiceTP1_Client_jar
-4. Exécuter la commande `java -jar WebServiceTP1.jar`
-  
+1. Via une console, dans le dossier out/. **Note : les exécutables n'ont pas été ajouté car +38Mo. Il sont cependant disponibles sur https://gitlab.com/danycor/webservice-ex1**
+2. Exécuter la commande `java -jar WebServiceTP1-Server.jar`
+3. Via une console, dans le dossier out/
+4. Exécuter la commande `java -jar WebServiceTP1-Client.jar`
+
 ## Exécuter le projet
 
 1. Créer un nouveau projet intellij ou eclipse
