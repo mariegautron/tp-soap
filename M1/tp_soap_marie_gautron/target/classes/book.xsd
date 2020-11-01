@@ -1,0 +1,84 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://nantes.ynov.com/soap/book"
+	targetNamespace="http://nantes.ynov.com/soap/book"
+	elementFormDefault="qualified">
+
+	<xs:element name="getBookById">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="xs:long" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="getBookByIdResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="book" type="tns:book" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="getAllBooksRequest">
+		<xs:complexType />
+	</xs:element>
+
+	<xs:element name="getAllBooksResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="bookType" type="tns:book"
+					maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="addBookRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="title" type="xs:string" />
+				<xs:element name="ISBN" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="addBookResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="book" type="tns:book" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+<xs:element name="deleteBookRequest">
+        <xs:complexType>
+            <xs:sequence>
+               <xs:element name="id" type="xs:long"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="deleteBookResponse">
+        <xs:complexType/>
+    </xs:element>
+
+<xs:element name="updateBookRequest">
+        <xs:complexType>
+            <xs:sequence>
+               <xs:element name="title" type="xs:string"/>
+                <xs:element name="isbn" type="xs:long"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="updateBookResponse">
+        <xs:complexType/>
+    </xs:element>
+
+	<xs:complexType name="book">
+		<xs:sequence>
+			<xs:element name="id" type="xs:long" />
+			<xs:element name="title" type="xs:string" />
+			<xs:element name="isbn" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+	
+</xs:schema>
